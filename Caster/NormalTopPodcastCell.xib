@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NormalTopPodcastCell" rowHeight="133" id="KGk-i7-Jjw" customClass="NormalTopPodcastCell" customModule="Caster" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="133"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="382" height="132.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="FzD-ud-T6P" userLabel="HStack">
+                        <rect key="frame" x="8" y="8" width="366" height="116.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Gx-OY-y3Q" userLabel="Number">
+                                <rect key="frame" x="0.0" y="48.5" width="30" height="19.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="999" constant="30" id="sD3-WA-E8e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Artwork Small" translatesAutoresizingMaskIntoConstraints="NO" id="YXu-Q4-Akt" userLabel="Artwork">
+                                <rect key="frame" x="35" y="26" width="64" height="64.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YXu-Q4-Akt" secondAttribute="height" multiplier="1:1" priority="999" id="3KT-Fd-e8o"/>
+                                    <constraint firstAttribute="height" priority="999" constant="64" id="gZw-iX-hfC"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LYD-2s-ZGC" userLabel="VStack">
+                                <rect key="frame" x="104" y="40" width="262" height="36.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFo-6t-YEo" userLabel="TItle">
+                                        <rect key="frame" x="0.0" y="0.0" width="262" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOi-1M-aln" userLabel="Authors">
+                                        <rect key="frame" x="0.0" y="19.5" width="262" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FzD-ud-T6P" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="5ok-tZ-xi6"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="FzD-ud-T6P" secondAttribute="bottom" id="HHp-zU-77O"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="FzD-ud-T6P" secondAttribute="trailing" id="W9r-ek-sjr"/>
+                    <constraint firstItem="FzD-ud-T6P" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="fbW-Oe-2Ps"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="artworkImageView" destination="YXu-Q4-Akt" id="gh6-L0-AyO"/>
+                <outlet property="authorLabel" destination="rOi-1M-aln" id="P4Z-Og-dkf"/>
+                <outlet property="numberLabel" destination="9Gx-OY-y3Q" id="RWP-RK-7Iz"/>
+                <outlet property="titleLabel" destination="FFo-6t-YEo" id="9Rb-A8-NPu"/>
+            </connections>
+            <point key="canvasLocation" x="56" y="96.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Artwork Small" width="64" height="64"/>
+    </resources>
+</document>

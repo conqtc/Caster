@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "PodcastCollectionCell.collectionView(UICollectionView, cellForItemAt : IndexPath) -&gt; UICollectionViewCell:PodcastCollectionCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell.artworkView">
+            </PersistentString>
+            <PersistentString
+               value = "items">
+            </PersistentString>
+            <PersistentString
+               value = "artworks">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "NowPlayingViewController.viewWillAppear(Bool) -&gt; ():NowPlayingViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "NowPlayingViewController.togglePlayingMode(to : PlayerMode, updateButton : Bool) -&gt; ():NowPlayingViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "currentMode">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PodcastFeedParser.parser(XMLParser, didEndElement : String, namespaceURI : String?, qualifiedName : String?) -&gt; ():PodcastFeedParser.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "currentContent">
+            </PersistentString>
+            <PersistentString
+               value = "currentEntry?.pubDate">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TopPodcastViewController.dataFetcher(DataFetcher, didFetchTopPodcastsWithError : DataFetcherErrorStyles, forGenreId : Int) -&gt; ():TopPodcastViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "CasterViewController.tableView(UITableView, viewForHeaderInSection : Int) -&gt; UIView?:CasterViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "section">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PlayerController.updateNowPlayingBarInfo() -&gt; ():PlayerController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "player.rate">
+            </PersistentString>
+            <PersistentString
+               value = "nowPlayingRate">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "NowPlayingPageViewController.viewDidLoad() -&gt; ():NowPlayingPageViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "episodeViewController">
+            </PersistentString>
+            <PersistentString
+               value = "artworkViewController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PodcastViewController.pid.didset:PodcastViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "pid">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CasterViewController.registerCellTypes() -&gt; ():CasterViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell.cellClass">
+            </PersistentString>
+            <PersistentString
+               value = "">
+            </PersistentString>
+            <PersistentString
+               value = "cell.reuseIdentifier">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PodcastCollectionCell.collectionView(UICollectionView, willDisplay : UICollectionViewCell, forItemAt : IndexPath) -&gt; ():PodcastCollectionCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "artworkList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "NowPlayingViewController.observeValue(forKeyPath : String?, of : Any?, change : [NSKeyValueChangeKey : Any]?, context : UnsafeMutableRawPointer?) -&gt; ():NowPlayingViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "playerItem.status">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TopPodcastViewController.tableView(UITableView, cellForRowAt : IndexPath) -&gt; UITableViewCell:TopPodcastViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "artworkList.count">
+            </PersistentString>
+            <PersistentString
+               value = "podcastList.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "iTunesRssParser.parse() -&gt; [EpisodeItem]?:iTunesRSSParser.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.items">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PodcastViewController.tableView(UITableView, cellForRowAt : IndexPath) -&gt; UITableViewCell:PodcastViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "episodeList?[index].itemDescription">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TableViewWithStretchableHeaderController.viewDidLoad() -&gt; ():TableViewWithStretchableHeaderController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "inset">
+            </PersistentString>
+            <PersistentString
+               value = "navbarHeight">
+            </PersistentString>
+            <PersistentString
+               value = "headerOffset">
+            </PersistentString>
+            <PersistentString
+               value = "tableView.tableHeaderView">
+            </PersistentString>
+            <PersistentString
+               value = "headerView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DataFetcher.(fetchTopPodcasts(gid : Int, limit : Int) -&gt; ()).(closure #1):DataFetcher.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "response.error">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PlayerController.observeValue(forKeyPath : String?, of : Any?, change : [NSKeyValueChangeKey : Any]?, context : UnsafeMutableRawPointer?) -&gt; ():PlayerController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "playerItem?.asset">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GenreViewController.stopLoadingAnimation() -&gt; ():GenreViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "activityIndicator">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "iTunesRssParser.mapCharacters(String, forPath : RSSPath) -&gt; ():iTunesRSSParser.swift">
+      </ContextState>
+      <ContextState
+         contextName = "NowPlayingViewController.(startMediaPlayer() -&gt; ()).(closure #1):NowPlayingViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "duration">
+            </PersistentString>
+            <PersistentString
+               value = "avLength">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PodcastViewController.viewDidLoad() -&gt; ():PodcastViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "podcastInfo">
+            </PersistentString>
+            <PersistentString
+               value = "feedUrl">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PodcastViewController.scrollViewDidScroll(UIScrollView) -&gt; ():PodcastViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "tableView.contentInset">
+            </PersistentString>
+            <PersistentString
+               value = "headerHeight - layoutLength - yOffset">
+            </PersistentString>
+            <PersistentString
+               value = "headerView.frame">
+            </PersistentString>
+            <PersistentString
+               value = "tableView.contentOffset">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchResultCell" rowHeight="86" id="KGk-i7-Jjw" customClass="SearchResultCell" customModule="Caster" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="86"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="85.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fkV-dX-rQX" userLabel="HStack">
+                        <rect key="frame" x="8" y="8.5" width="304" height="69"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Artwork Small" translatesAutoresizingMaskIntoConstraints="NO" id="Ce1-6Y-DCy" userLabel="Artwork">
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="pZD-bb-J7V"/>
+                                    <constraint firstAttribute="width" secondItem="Ce1-6Y-DCy" secondAttribute="height" multiplier="1:1" id="sKF-mI-JaP"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ulz-4v-u6m" userLabel="VStack">
+                                <rect key="frame" x="70" y="0.0" width="234" height="41.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxi-gv-32T" userLabel="Title">
+                                        <rect key="frame" x="0.0" y="0.0" width="234" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p81-zf-DE7" userLabel="Desc">
+                                        <rect key="frame" x="0.0" y="24.5" width="234" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fkV-dX-rQX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="AUD-Ti-aPO"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="fkV-dX-rQX" secondAttribute="trailing" id="JSJ-GU-Z0G"/>
+                    <constraint firstItem="fkV-dX-rQX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="PtC-VR-LBA"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="fkV-dX-rQX" secondAttribute="bottom" id="wYm-L8-dMy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="artworkImageView" destination="Ce1-6Y-DCy" id="XLh-VO-jwD"/>
+                <outlet property="descLabel" destination="p81-zf-DE7" id="ilP-xZ-CUP"/>
+                <outlet property="titleLabel" destination="kxi-gv-32T" id="Zny-wp-fXy"/>
+            </connections>
+            <point key="canvasLocation" x="60" y="75"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Artwork Small" width="64" height="64"/>
+    </resources>
+</document>
