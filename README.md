@@ -1,6 +1,38 @@
 # Caster
+Meet Caster, a podcast app purely written in Swift running on iOS.
 
-Screenshots
+## User Interface
+* Custom TableViewController for transparent navigation bar and sizable list view's header (bounce effect)
+* Different types of table cell for UITableView
+* CollectionView inside TableView
+* UIVisualEffectView over podcast artwork
+* Auto-layout using UIStackView, auto-height table view...
+* Custom presentation controller to display non-full menus and dialogs as well as slide in animations
+* Draggable “Now Playing Mini Bar” always resides at the bottom of the screen
+
+## Networking Handling and Concurrent Programming
+*	Retrieve the top post cast list from iTunes (XML web service)
+*	Lookup podcast information based on podcast id (JSON web service) to get particular feed URL
+*	Retrieve feed URL to parse for detail podcast info and episodes list
+*	Download all of those files and artwork images
+* Use "semaphore" to collaborate Operation and URLSession tasks
+* Load artworks asynchronously
+
+## Media Streaming
+* KVOs (key value observers) and the media states
+*	KVOs progress and buffer duration
+*	The difference between AVPlayer.rate (requested rate) and AVPlayerItem.timebase (actual rate)
+
+## Data Parsing (XML and JSON)
+Caster has two parsers (based on NSXMLParser) to parse XML data from top podcast list (ATOM format) and podcast feed RSS (RSS format).
+
+## System Integration
+* Display the artwork and handle play/pause/skip forward/skip backward from system’s control center and lock screen
+*	Enable background audio playing
+*	Enable the app to continue to work in background mode for around 3 mins, so that media event will be received event when the app is in the background.
+*	Handle remote events from control center and lock screen
+
+*Screenshots*
 
 ### Main
 ![Main](https://raw.githubusercontent.com/conqtc/Caster/master/Screenshots/1_main.png)
